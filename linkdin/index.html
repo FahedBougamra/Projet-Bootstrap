@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!---menu--->
+    <div class="sticky-top">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <!-- Container wrapper -->
+            <div class="container ">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="#">
+                    <i class="fab fa-linkedin fa-2x pt-2"></i>
+                </a>
+                <!-- Search form -->
+                <nav class="navbar bg-body-tertiary">
+                    <form class="container-fluid">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Recherche" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                    </form>
+                </nav>
+                <!-- Toggle button -->
+                <button class="navbar-toggler border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <!-- Left links -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active d-flex flex-column " aria-current="page" href="#">
+                                <i class="fas fa-home fa-lg">
+                                    <span class="badge text-bg-danger">.</span>
+                                </i>
+                                <span class="small">Accueil</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link d-flex flex-column" aria-current="page" href="#">
+                                <i class="fas fa-user-friends fa-lg">
+                                    <span class="badge text-bg-danger">29</span>
+                                </i>
+                                <span class="small">Réseau</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex flex-column " aria-current="page" href="#">
+                                <i class="fas fa-briefcase fa-lg">
+                                    <span class="badge text-bg-danger">20</span>
+                                </i>
+                                <span class="small">Emplois</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex flex-column " aria-current="page" href="#">
+                                <i class="fas fa-comment-dots fa-lg">
+                                    <span class="badge text-bg-danger">55</span>
+                                </i>
+                                <span class="small">Messagerie</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-flex flex-column" aria-current="page" href="#">
+                                <i class="fas fa-bell fa-lg">
+                                    <span class="badge text-bg-danger">520</span>
+                                </i>
+                                <span class="small">Notifications</span>
+                            </a>
+                        </li>
+                        <li class="nav-link nav-item dropdown linkedin">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center text-center" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                                <img src="images/propo.jpg" class="rounded-circle" height="30" alt="PhotoProfile" loading="lazy"/>
+                                <span class="small">Vous</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Blog</a>
+                                <a class="dropdown-item" href="#">Gallery</a>
+                                <a class="dropdown-item" href="#">List</a>
+                                <a class="dropdown-item" href="#">Layout 1</a>
+                                <a class="dropdown-item" href="#">Layout 2</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">User profile</a>
+                            </div>
+
+                        </li>
+                    </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link d-flex flex-column" aria-current="page" href="#">
+                            <i class="fas fa-th fa-1x nav-link dropdown-toggle d-flex align-items-center bento-menu" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            </i>
+
+                            <span class="small"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li>
+                                <a class="dropdown-item" href="#">My profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Settings</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="Premium" href="#" >Essayez Premium<br>Pour entreprise
+                        </a>
+                    </li>
+
+                </div>
+                <!-- Collapsible wrapper -->
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+    </div>
+    <div class="container"> 
+        <!---sidebar--->
+        <div class="row mt-5">
+            <div class="col-lg-3 mb-2 p-0 px-lg-2">
+                <div class="side_bar sticky-top">
+                    <div class="sidebar border p-3">Gérer mon réseau
+                        <a href="#">
+                            <div class="row py-1">
+                                <div class="col-auto">
+                                    <i class="fas fa-user-friends"></i>
+                                </div>
+                                <div class="col p-0">Relations</div>
+                                <div class="col-auto">1100</div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="row py-1">
+                                <div class="col-auto">
+                                    <i class="far fa-user-circle"></i>
+                                </div>
+                                <div class="col p-0">Co-équipier</div>
+                                <div class="col-auto">10</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="row py-1">
+                                <div class="col-auto">
+                                    <i class="fas fa-portrait"></i>
+                                </div>
+                                <div class="col p-0">Contacts</div>
+                                <div class="col-auto">1501</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="row py-1">
+                                <div class="col-auto">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <div class="col p-0">Personnes que je suis</div>
+                                <div class="col-auto">4</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="row py-1">
+                                <div class="col-auto">
+                                    <i class="far fa-copy"></i>
+                                </div>
+                                <div class="col p-0">Pages</div>
+                                <div class="col-auto">14</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="row py-1">
+                                <div class="col-auto">
+                                    <i class="fas fa-hashtag"></i>
+                                </div>
+                                <div class="col p-0">Hashtags</div>
+                                <div class="col-auto">2</div>
+                            </div>
+                        </a>
+                        <!---sidebar_partie_2--->
+                    </div>
+                    <div class="sidebar2 border pt-4">
+                        <div class="d-flex justify-content-end text-secondary me-2">
+                            <a href="#">Ad ...</a>
+                        </div>
+                        <div class="text-center sidebar-font">Ready for your next opportunity?
+                        </div>
+                        <div class=" text-center">
+                            <img  class="rounded-circle sidebar2-img img-2" style="background-image: url(images/propo.jpg)"  >
+                            <img src="images/sidebar.jpg" class="rounded m-3">                    
+                        </div>
+                        <div class="text-center sidebar-font">Bougamra, <strong>BARON HEALTH GROUP</strong> is hiring
+                        </div>
+                        <div class="d-flex justify-content-center my-3"> 
+                            <a href="#" class="btn btn-outline-primary ">Se connecter</a>
+                        </div>
+                    </div>
+                    <div class="sidebar2 border pt-4 text-center sidebar-font">
+                        <div><strong>L'impoprtation de Vos contacts est ptête</strong></div>
+                        <div>Invitez vos contacts à rejoindre votre réseau pour ne jamais perdre contact</div>
+                        <div>
+                            <div class="d-flex justify-content-center btn-column my-3"> 
+                                <a href="#" class="btn btn-continuer btn-outline-primary btn-continuer">Continuer</a>
+                                <a href="#" class="btn  text-secondary btn-information">Plus d'information</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar4 border text-center pt-4 sidebar-font">
+                        <div class="d-flex justify-content-center me-5">
+                            <div class="col ps-4 col-info">
+                                <a href="#">Infos</a>
+                            </div>    
+                            <div class="col-auto">
+                                <a href="#">Assistance clientéle</a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#" class="butn-condition">Conditions générales et confidentialité
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="col boutn-pub">
+                                <a href="#">Publicité</a>
+                            </div>    
+                            <div class="col boutn-solu">
+                                <a href="#">Solutions professionelles
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                            </div> 
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="col-auto butn-tele ps-5">
+                                <a href="#">Téléchargez l'application Linkedin</a>
+                            </div>    
+                            <div class="col-auto">
+                                <a href="#" class="butn-plus">plus</a>
+                            </div> 
+                        </div>
+                        <div>
+                            <strong><a href="#">LINKDIN</a></strong>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <a href="#"> Linkedin Corporation </a>
+                            <i class="fa-regular fa-copyright"></i> 2020
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 p-0 px-lg-2">
+                <!---suggestion--->
+                <div class="row border suggestion mb-3 mx-0 p-3">
+                    <a href="#" class="text-end text-secondary">
+                        <i class="fa-solid fa-x"></i>
+                    </a>
+                    <div class="box col-lg-auto d-flex justify-content-center">
+                        <div class=" t-bq-quote-jasper-userpic_f4 mt-3">
+                        </div>
+                    </div>
+                    <div class="box col-lg ">
+                        <h5 class="mt-4 ">Connaissez-vous Camille Leroy ? Envoyer une invitation pour entrer en relation.</h5>
+                        <div>Analyste en marketing digital</div>
+                        <div><i class="fas fa-link pb-3"></i>  Sophie Dubois et 60 autres relations</div>
+                        <button type="button" class="btn text-secondary border border-black">Ignorer</button>
+                        <button type="button" class="btn btn-outline-primary">Accepter</button>
+                    </div>
+                </div>
+                <!---invitations--->
+                <div class="container p-0 mb-3">
+                    <div class="partie4 border ">
+                        <div class="row py-3">
+                            <div class="col text-start ps-5 ">
+                                <a href="#" class="a_text">Invitation</a>
+                            </div>
+                            <div class="col text-end pe-5 ">
+                                <a href="#" class="a_text">Voir les 20</a>
+                            </div>
+                        </div>
+                        <div class="row bg_reseau border-top m-0 p-3 pb-0">
+                            <div class="box col-lg-auto d-flex justify-content-center">
+                                <div class=" t-bq-quote-jasper-userpic_f2 mt-3">
+                                </div>
+                            </div>
+                            <div class="box col-lg ">
+                                <h5 class="mt-4 ">Emily Thompson</h5>
+                                <div>Architecte paysagiste</div>
+                                <div>
+                                    <i class="fas fa-link"></i>  Sophie Dubois et 80 autres relations
+                                </div>
+                            </div>
+                            <div class="box col-lg-auto d-flex justify-content-center pt-3">
+                                <button type="button" class="btn text-secondary me-2 my-5">Ignorer</button>
+                                <button type="button" class="btn btn-outline-primary me-2 my-5">Accepter</button>
+                            </div>
+                        </div>
+                        <div class="row bg_reseau border-top m-0 p-3 pb-0">
+                            <div class="box col-lg-auto d-flex justify-content-center ">
+                                <div class=" t-bq-quote-jasper-userpic_f3 mt-3">
+                                </div>
+                            </div>
+                            <div class="box col-lg ">
+                                <h5 class="mt-4 t">Sophia Chen</h5>
+                                <div>Astronome</div>
+                                <div>
+                                    <i class="fas fa-link"></i>  Julie Martin et 120 autres relations
+                                </div>
+                            </div>
+                            <div class="box col-lg-auto d-flex justify-content-center pt-3">
+                                <button type="button" class="btn text-secondary me-2 my-5">Ignorer</button>
+                                <button type="button" class="btn btn-outline-primary me-2 my-5">Accepter</button>
+                            </div>
+                        </div>
+                        <div class="row bg_reseau border-top m-0 p-3 pb-0">
+                            <div class="box col-lg-auto d-flex justify-content-center ">
+                                <div class=" t-bq-quote-jasper-userpic_m3 mt-3">
+                                </div>
+                            </div>
+                            <div class="box col-lg ">
+                                <h5 class="mt-4 ">Liam Rodriguez</h5>
+                                <div> Ingénieur en logiciel</div>
+                                <div>
+                                    <i class="fas fa-link"></i>  Caroline Lefèvre et 40 autres relations
+                                </div>
+                            </div>
+                            <div class="box col-lg-auto d-flex justify-content-center pt-3">
+                                <button type="button" class="btn text-secondary me-2 my-5">Ignorer</button>
+                                <button type="button" class="btn btn-outline-primary me-2 my-5">Accepter</button>
+                            </div>
+                        </div>
+                        <a href="#" class="btn text-secondary me-2 my-4 d-flex justify-content-center" type="button" >Voir plus</a>
+                    </div>
+                </div>
+                <!---réseau--->
+                <div class="container reseau border mb-2 p-0 m-0"> 
+                    <div class="row pt-3 px-3"> 
+                        <div class="col text-start ps-5 ">
+                            <a href="#" class="a_text">Personnes avec des roles similaires que vous pourriez connaitre</a>
+                        </div>
+                        <div class="col text-end pe-5-5 ">
+                            <a href="#" class="a_text">Tous les voir</a>
+                        </div>
+                    </div>
+                    <div class="row m-0"> 
+                        <div class="text-center p-3"></div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 gx-2 mb-1">
+                            <div class="card rounded-0 text-center"> 
+                                <section class="t-bq-section" id="jasper">
+                                    <div class="t-bq-wrapper t-bq-wrapper-boxed">
+                                        <div class="t-bq-quote t-bq-quote-jasper">
+                                            <div class="t-bq-quote-jasper-pattern rounded-0" style="background-image: url(images/reseau/background/services.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-userpic" style="background-image: url(images/reseau/suggestion/Sophie_Dubois.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-base">
+                                                <blockquote class="t-bq-quote-jasper-text" cite="Strugatsky Brothers">
+                                                    <h5>Sophie Dubois</h5>
+                                                    <div>Consultante en marketing digital</div>
+                                                </blockquote>
+                                                <div class="t-bq-quote-jasper-meta dubois">
+                                                    <div class="t-bq-quote-jasper-meta-info">
+                                                        <div class="t-bq-quote-jasper-author">
+                                                            <cite>
+                                                                <i class="fa-solid fa-link"></i>18 Relations en commun
+                                                            </cite>
+                                                        </div>
+                                                        <button type="button" class="btn btn-outline-primary ">Se connecter</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 gx-2 mb-1">
+                            <div class="card rounded-0 text-center"> 
+                                <section class="t-bq-section" id="jasper">
+                                    <div class="t-bq-wrapper t-bq-wrapper-boxed">
+                                        <div class="t-bq-quote t-bq-quote-jasper">
+                                            <div class="t-bq-quote-jasper-pattern rounded-0" style="background-image: url(images/reseau/background/logiciels.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-userpic" style="background-image: url(images/reseau/suggestion/Maxime_Leroy.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-base">
+                                                <blockquote class="t-bq-quote-jasper-text" cite="Strugatsky Brothers">
+                                                    <h5>Maxime Leroy</h5>
+                                                    <div>Développeur de logiciels</div>
+                                                </blockquote>
+                                                <div class="t-bq-quote-jasper-meta leroy">
+                                                    <div class="t-bq-quote-jasper-meta-info">
+                                                        <div class="t-bq-quote-jasper-author pt-4">
+                                                            <cite>
+                                                                <i class="fa-solid fa-link"></i>25 Relations en commun
+                                                            </cite>
+                                                        </div>
+                                                        <button type="button" class="btn btn-outline-primary ">Se connecter</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 gx-2 mb-1">
+                            <div class="card rounded-0 text-center"> 
+                                <section class="t-bq-section" id="jasper">
+                                    <div class="t-bq-wrapper t-bq-wrapper-boxed">
+                                        <div class="t-bq-quote t-bq-quote-jasper">
+                                            <div class="t-bq-quote-jasper-pattern rounded-0" style="background-image: url(images/reseau/background/coach.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-userpic" style="background-image: url(images/reseau/suggestion/julie_martin.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-base">
+                                                <blockquote class="t-bq-quote-jasper-text" cite="Strugatsky Brothers">
+                                                    <h5>Julie Martin</h5>
+                                                    <div>Coach en développement personnel</div>
+                                                </blockquote>
+                                                <div class="t-bq-quote-jasper-meta julie">
+                                                    <div class="t-bq-quote-jasper-meta-info">
+                                                        <div class="t-bq-quote-jasper-author">
+                                                            <cite>
+                                                                <i class="fa-solid fa-link"></i>36 Relations en commun
+                                                            </cite>
+                                                        </div>
+                                                        <button type="button" class="btn btn-outline-primary ">Se connecter</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 gx-2 mb-1">
+                            <div class="card rounded-0 text-center"> 
+                                <section class="t-bq-section" id="jasper">
+                                    <div class="t-bq-wrapper t-bq-wrapper-boxed">
+                                        <div class="t-bq-quote t-bq-quote-jasper">
+                                            <div class="t-bq-quote-jasper-pattern rounded-0" style="background-image: url(images/reseau/background/ingénieur.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-userpic" style="background-image: url(images/reseau/suggestion/antoine_lambert.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-base">
+                                                <blockquote class="t-bq-quote-jasper-text lambert" cite="Strugatsky Brothers">
+                                                    <h5>Antoine Lambert</h5>
+                                                    <div>Ingénieur en génie civil</div>
+                                                </blockquote>
+                                                <div class="t-bq-quote-jasper-meta ">
+                                                    <div class="t-bq-quote-jasper-meta-info ">
+                                                        <div class="t-bq-quote-jasper-author pt-4">
+                                                            <cite>
+                                                                <i class="fa-solid fa-link"></i>14 Relations en commun
+                                                            </cite>
+                                                        </div>
+                                                        <button type="button" class="btn btn-outline-primary ">Se connecter</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 gx-2 mb-1">
+                            <div class="card rounded-0 text-center">
+                                <section class="t-bq-section" id="jasper">
+                                    <div class="t-bq-wrapper t-bq-wrapper-boxed">
+                                        <div class="t-bq-quote t-bq-quote-jasper">
+                                            <div class="t-bq-quote-jasper-pattern rounded-0" style="background-image: url(images/reseau/background/financier.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-userpic" style="background-image: url(images/reseau/suggestion/emilie_deschamps.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-base">
+                                                <blockquote class="t-bq-quote-jasper-text" cite="Strugatsky Brothers">
+                                                    <h5>Émilie Deschamps</h5>
+                                                    <div>Analyste financier</div>
+                                                </blockquote>
+                                                <div class="t-bq-quote-jasper-meta">
+                                                    <div class="t-bq-quote-jasper-meta-info">
+                                                        <div class="t-bq-quote-jasper-author">
+                                                            <cite>
+                                                                <i class="fa-solid fa-link"></i>30 Relations en commun
+                                                            </cite>
+                                                        </div>
+                                                        <button type="button" class="btn btn-outline-primary ">Se connecter</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 gx-2 mb-1">
+                            <div class="card rounded-0 text-center">
+                                <section class="t-bq-section" id="jasper">
+                                    <div class="t-bq-wrapper t-bq-wrapper-boxed">
+                                        <div class="t-bq-quote t-bq-quote-jasper">
+                                            <div class="t-bq-quote-jasper-pattern rounded-0" style="background-image: url(images/reseau/background/menuisier.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-userpic" style="background-image: url(images/reseau/suggestion/nicolas_berger.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-base">
+                                                <blockquote class="t-bq-quote-jasper-text" cite="Strugatsky Brothers">
+                                                    <h5>Nicolas Berger</h5>
+                                                    <div class="pb-n4">Menuisier</div>
+                                                </blockquote>
+                                                <div class="t-bq-quote-jasper-meta">
+                                                    <div class="t-bq-quote-jasper-meta-info">
+                                                        <div class="t-bq-quote-jasper-author ">
+                                                            <cite>
+                                                                <i class="fa-solid fa-link"></i>22 Relations en commun
+                                                            </cite>
+                                                        </div>
+                                                        <button type="button" class="btn btn-outline-primary ">Se connecter</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 gx-2 mb-1">
+                            <div class="card rounded-0 text-center"> 
+                                <section class="t-bq-section" id="jasper">
+                                    <div class="t-bq-wrapper t-bq-wrapper-boxed">
+                                        <div class="t-bq-quote t-bq-quote-jasper">
+                                            <div class="t-bq-quote-jasper-pattern rounded-0" style="background-image: url(images/reseau/background/intérieur.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-userpic"style="background-image: url(images/reseau/suggestion/thomas_roussel.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-base">
+                                                <blockquote class="t-bq-quote-jasper-text" cite="Strugatsky Brothers">
+                                                    <h5>Thomas Roussel</h5>
+                                                    <div>Architecte d'intérieur</div>
+                                                </blockquote>
+                                                <div class="t-bq-quote-jasper-meta">
+                                                    <div class="t-bq-quote-jasper-meta-info">
+                                                        <div class="t-bq-quote-jasper-author">
+                                                            <cite>
+                                                                <i class="fa-solid fa-link"></i>10 Relations en commun
+                                                            </cite>
+                                                        </div>
+                                                        <button type="button" class="btn btn-outline-primary ">Se connecter</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 gx-2 mb-1">
+                            <div class="card rounded-0 text-center"> 
+                                <section class="t-bq-section" id="jasper">
+                                    <div class="t-bq-wrapper t-bq-wrapper-boxed">
+                                        <div class="t-bq-quote t-bq-quote-jasper">
+                                            <div class="t-bq-quote-jasper-pattern rounded-0" style="background-image: url(images/reseau/background/avocate.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-userpic" style="background-image: url(images/reseau/suggestion/caroline_lefèvre.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-base">
+                                                <blockquote class="t-bq-quote-jasper-text" cite="Strugatsky Brothers">
+                                                    <h5>Caroline Lefèvre</h5>
+                                                    <div>Avocate</div>
+                                                </blockquote>
+                                                <div class="t-bq-quote-jasper-meta">
+                                                    <div class="t-bq-quote-jasper-meta-info">
+                                                        <div class="t-bq-quote-jasper-author">
+                                                            <cite>
+                                                                <i class="fa-solid fa-link"></i>22 Relations en commun
+                                                            </cite>
+                                                        </div>
+                                                        <button type="button" class="btn btn-outline-primary ">Se connecter</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---pages--->
+                <div class="container reseau border mb-2"> 
+                    <div class="row pt-3 px-3"> 
+                        <div class="col text-start ps-5 ">
+                            <a href="#" class="a_text">Des personnes, que vous suivez, suivent également ces pages</a>
+                        </div>
+                        <div class="col text-end pe-5-5 ">
+                            <a href="#" class="a_text">Tous les voir</a>
+                        </div>
+                    </div>
+                    <div class="row "> 
+                        <div class="text-center p-3"></div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 gx-2 mb-1">
+                            <div class="card rounded-0 text-center"> 
+                                <section class="t-bq-section" id="jasper">
+                                    <div class="t-bq-wrapper t-bq-wrapper-boxed">
+                                        <div class="t-bq-quote t-bq-quote-jasper">
+                                            <div class="t-bq-quote-jasper-pattern rounded-0" style="background-image: url(images/pages/background/01.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-userpic_2" style="background-image: url(images/pages/conpany/01.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-base">
+                                                <blockquote class="t-bq-quote-jasper-text" cite="Strugatsky Brothers">
+                                                    <h5 class="pages">Horvord Business </h5>
+                                                </blockquote>
+                                                <div class="t-bq-quote-jasper-meta">
+                                                    <div class="t-bq-quote-jasper-meta-info">
+                                                        <div class="t-bq-quote-jasper-author">
+                                                            <cite>9 538 988 abonnés</cite>
+                                                        </div>
+                                                        <button type="button" class="btn btn-outline-primary px-5">Suivre</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 gx-2 mb-1">
+                            <div class="card rounded-0 text-center"> 
+                                <section class="t-bq-section" id="jasper">
+                                    <div class="t-bq-wrapper t-bq-wrapper-boxed">
+                                        <div class="t-bq-quote t-bq-quote-jasper">
+                                            <div class="t-bq-quote-jasper-pattern rounded-0" style="background-image: url(images/pages/background/02.jpg)" >
+                                            </div>
+                                            <!---suggestion_pages--->
+                                            <div class="t-bq-quote-jasper-userpic_2" style="background-image: url(images/pages/conpany/02.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-base">
+                                                <blockquote class="t-bq-quote-jasper-text" cite="Strugatsky Brothers">
+                                                    <h5 class="pages">Ravana Québec</h5>
+                                                </blockquote>
+                                                <div class="t-bq-quote-jasper-meta">
+                                                    <div class="t-bq-quote-jasper-meta-info">
+                                                        <div class="t-bq-quote-jasper-author">
+                                                            <cite>21 346 abonnés</cite>
+                                                        </div>
+                                                        <button type="button" class="btn btn-outline-primary px-5">Suivre</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 gx-2 mb-1">
+                            <div class="card rounded-0 text-center"> 
+                                <section class="t-bq-section" id="jasper">
+                                    <div class="t-bq-wrapper t-bq-wrapper-boxed">
+                                        <div class="t-bq-quote t-bq-quote-jasper">
+                                            <div class="t-bq-quote-jasper-pattern rounded-0" style="background-image: url(images/pages/background/03.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-userpic_2" style="background-image: url(images/pages/conpany/03.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-base">
+                                                <blockquote class="t-bq-quote-jasper-text" cite="Strugatsky Brothers">
+                                                    <h5 class="pages">Fodo</h5>
+                                                </blockquote>
+                                                <div class="t-bq-quote-jasper-meta">
+                                                    <div class="t-bq-quote-jasper-meta-info">
+                                                        <div class="t-bq-quote-jasper-author">
+                                                            <cite>2 923 abonnés</cite>
+                                                        </div>
+                                                        <button type="button" class="btn btn-outline-primary px-5">Suivre</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3 gx-2 mb-1">
+                            <div class="card rounded-0 text-center"> 
+                                <section class="t-bq-section" id="jasper">
+                                    <div class="t-bq-wrapper t-bq-wrapper-boxed">
+                                        <div class="t-bq-quote t-bq-quote-jasper">
+                                            <div class="t-bq-quote-jasper-pattern rounded-0" style="background-image: url(images/pages/background/04.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-userpic_2" style="background-image: url(images/pages/conpany/04.jpg)">
+                                            </div>
+                                            <div class="t-bq-quote-jasper-base">
+                                                <blockquote class="t-bq-quote-jasper-text" cite="Strugatsky Brothers">
+                                                    <h5 class="pages">Farbes</h5>
+                                                </blockquote>
+                                                <div class="t-bq-quote-jasper-meta">
+                                                    <div class="t-bq-quote-jasper-meta-info">
+                                                        <div class="t-bq-quote-jasper-author">
+                                                            <cite>12 946 578</cite>
+                                                        </div>
+                                                        <button type="button" class="btn btn-outline-primary px-5">Suivre</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+
+
+
+</body>
+</html>

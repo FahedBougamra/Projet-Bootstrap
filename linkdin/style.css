@@ -1,0 +1,378 @@
+/*---commun---*/
+.card{
+    min-height: 360px;
+}
+
+/*---menu---*/
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #262626;
+}
+
+/* Color of the navbar BEFORE scroll */
+.navbar-scroll {
+  background-color: #FFC017;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #262626;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.bento-menu {
+    margin-left: 14px;
+}
+.navbar-brand {
+  font-size: unset;
+  height: 3.5rem;
+}
+.badge
+{font-size: 8px;
+  margin-left: 4px ;
+}
+
+li {
+  margin-right: -10px;
+  padding: 0 10px;
+  list-style-type: none;
+}
+.Premium{
+  text-decoration: none;
+  color: gold;
+}
+.linkedin {
+  padding: 0 10px;
+  border-right: 1px solid black;
+}
+
+/*--- -SIDEBAR---*/
+.sidebar {
+    min-height: 240px;
+
+}
+.sidebar2{
+    min-height: 165px;
+}
+.sidebar4{
+    min-height: 180px;
+    line-height: 1.9;
+}
+.sidebar-font{
+    font-size: 13px;
+}
+
+
+.side_bar {
+    top: 90px;
+    z-index: 0;
+}
+
+.sidebar2-img {
+    width: 100px;
+    height: 100px;
+     background-size: cover;
+}
+.boutn-pub{
+    margin-left: -60px;
+}
+.boutn-solu{
+    margin-left: -70px;
+}
+.butn-plus{
+    margin-left: -30px;
+
+}
+
+
+/*--- suggestion ---*/
+.suggestion{
+    margin-top: 42px;
+}
+
+/*--- INVITATION---*/
+.badge
+{font-size: 8px;
+    margin-left: -4px ;
+}
+.partie4 {
+    min-height: 200px;
+}
+.box{
+    min-height: 100px;
+}
+.img_invi_res {
+ border-radius: 100%;
+ height: 100px;
+ width: 100px;
+
+}
+.bg_reseau {
+  background-color: rgba(230, 247, 255, 0.8);
+}
+a{
+  text-decoration: none;
+    color: grey  
+}
+.a_text{
+    text-decoration: none;
+    color: grey
+}
+.t-bq-quote-jasper-userpic_f4{
+    width: 100px;
+    height: 100px;
+    background: url(images/suggestion/f4.jpg) center center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.t-bq-quote-jasper-userpic_f2{
+    width: 100px;
+    height: 100px;
+    background: url(images/invitation/f2.jpg) center center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.t-bq-quote-jasper-userpic_f3{
+    width: 100px;
+    height: 100px;
+    background: url(images/invitation/f3.jpg) center center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.t-bq-quote-jasper-userpic_m3{
+    width: 100px;
+    height: 100px;
+    background: url(images/invitation/m3.jpg) center center no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/*---RESEAUX---*/
+.t-bq-quote-jasper-pattern {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100px;
+    background-position: center center reapeat;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px 10px 0 0;
+}
+
+.t-bq-quote-jasper-pattern .t-bq-quote-jasper-qmark {
+    flex-basis: 100px;
+    font-family: Garamond, Georgia, "Times New Roman", serif;
+    font-size: 60pt;
+    color: #999999;
+    text-align: center;
+    height: 80px;
+    line-height: 90pt;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+
+.t-bq-quote-jasper-userpic {
+   position: absolute;
+   top: 40px;
+   left: calc(50% - 50px);
+   width: 110px;
+   height: 110px;
+   background-position: center center;
+   background-size: cover;
+   border-radius: 50%;
+}
+
+.t-bq-quote-jasper-userpic_2 {
+   position: absolute;
+   top: 40px;
+   left: calc(50% - 70px);
+   width: 140px;
+   height: 160px;
+   background-position: center center;
+   background-size: cover;
+}
+
+
+
+.t-bq-quote-jasper-base {
+ background: #ffffff;
+ padding: 18px;
+ padding-top: 55px;
+ font-size: 11pt;
+ line-height: 1.62em;
+ border-radius: 0 0 10px 10px;
+}
+
+.t-bq-quote-jasper-meta {
+    margin-top: 30px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.t-bq-quote-jasper-meta .t-bq-quote-jasper-author,
+.t-bq-quote-jasper-meta .t-bq-quote-jasper-source {
+    color: #777777;
+}
+
+.t-bq-quote-jasper-meta .t-bq-quote-jasper-author {
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.t-bq-quote-jasper-meta .t-bq-quote-jasper-author cite {
+    font-style: normal;
+}
+
+.t-bq-quote-jasper-meta .t-bq-quote-jasper-source {
+    font-size: 9pt;
+}
+.a_text{
+    text-decoration: none;
+    color: grey
+}
+
+
+
+
+
+
+.pages{
+    padding-top: 55px;
+}
+
+
+/*--- menu ---
+@media screen and (max-width: 990px) { 
+  .collapse {
+    display: block;
+    float: none;
+    text-align: left;
+}
+}*/
+
+/*---reseau---*/
+@media screen and (max-width: 1180px) {
+
+    .dubois, .julie {
+        padding-top: 32px
+    }
+
+    .side_bar {
+        margin-top: 50px;
+    }
+    .suggestion {
+        margin-top: 80px;
+    }
+    .side_bar {
+        top: 128px;
+    }
+    .btn-continuer{
+        margin-top: 10px;
+        margin-bottom: 22px;
+    }
+    .btn-information{
+        border: none;
+    }
+    .btn-continuer{
+margin-left: 17px;}
+
+}
+ .butn-tele{
+        margin-left: -45px;
+    }
+    .butn-plus{
+        margin-left: 10px;
+    }
+    .butn-condition, .butn-tele{
+        font-size: 12px;
+    }
+
+@media screen and (max-width: 820px) {
+
+    .dubois, .julie {
+        padding-top: 45px
+    }
+
+    /*---invitation-suggestion---*/
+    .t-bq-quote-jasper-userpic_f2, .t-bq-quote-jasper-userpic_f3, .t-bq-quote-jasper-userpic_m3, .t-bq-quote-jasper-userpic_f4, .img-2 {
+        width: 150px;
+        height: 150px;
+    }
+
+    /*--- menu ---*/
+    .navbar-nav {
+        place-items: flex-start;
+    }
+
+    .linkedin {
+      border: none;
+  }
+  /*--- sidebar ---*/
+  .side_bar {
+    margin-top: 50px;
+}
+ .btn-information {
+        padding-top: 20px;
+    }
+
+/*---reseau---*/
+.card{
+    min-height: 380px;
+}
+.leroy {
+    padding-top: 24px;
+}
+.lambert{
+    padding-top: 16px;
+}
+.col-info{
+    max-width: 200px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .t-bq-quote-jasper-base {
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width: 414px) {
+
+    .btn-information {
+        padding-top: 20px;
+    }
+    .img-2 {
+        width: 100px;
+        height: 100px;
+    }
+    .boutn-pub{
+        margin-left: auto;
+    }
+    .butn-plus{
+        margin-left: 75px;
+    }
+   .butn-tele{
+        margin-left: -45px;
+    }
+      }

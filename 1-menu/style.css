@@ -1,0 +1,74 @@
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #262626;
+}
+
+/* Color of the navbar BEFORE scroll */
+.navbar-scroll {
+  background-color: #FFC017;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #262626;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: auto;
+  padding-bottom: auto;
+}
+.navbar-brand {
+  font-size: unset;
+  height: 3.5rem;
+}
+.badge
+{font-size: 8px;
+  margin-left: 4px ;
+}
+
+.bento-menu {
+    margin-left: 14px;
+}
+
+li {
+  margin-right: -10px;
+  padding: 0 10px;
+  list-style-type: none;
+}
+.Premium{
+  text-decoration: none;
+  color: gold;
+}
+.linkedin {
+  padding: 0 10px;
+  border-right: 1px solid black;
+}
+
+@media screen and (max-width: 990px) { 
+  .collapse {
+    display: block;
+    float: none;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 820px) { 
+  .navbar-nav {
+    place-items: flex-start;
+  }
+
+.linkedin {
+  border: none;
+}
+
+  }

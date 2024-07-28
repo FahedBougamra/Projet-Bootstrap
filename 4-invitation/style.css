@@ -1,0 +1,84 @@
+.container{
+  max-width: 975px;
+  margin: auto;
+}
+  .badge
+  {font-size: 8px;
+    margin-left: -4px ;
+  }
+  .partie4 {
+    min-height: 300px;
+  }
+  .box{
+    min-height: 100px;
+  }
+  .img_invi_res {
+   border-radius: 100%;
+   height: 100px;
+   width: 100px;
+  
+ }
+ .bg_reseau {
+  background-color: rgba(230, 247, 255, 0.8);
+}
+.a_text{
+    text-decoration: none;
+    color: grey
+}
+.t-bq-quote-jasper-userpic_f2{
+width: 100px;
+ height: 100px;
+ background: url(images/invitation/f2.jpg) center center no-repeat;
+ background-size: cover;
+ border-radius: 50%;
+}
+.t-bq-quote-jasper-userpic_f3{
+width: 100px;
+ height: 100px;
+ background: url(images/invitation/f3.jpg) center center no-repeat;
+ background-size: cover;
+ border-radius: 50%;
+}
+.t-bq-quote-jasper-userpic_m3{
+width: 100px;
+ height: 100px;
+ background: url(images/invitation/m3.jpg) center center no-repeat;
+ background-size: cover;
+ border-radius: 50%;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .t-bq-quote-jasper-userpic_f2{
+       width: 200px;
+ height: 200px;
+}
+     .t-bq-quote-jasper-userpic_f3{
+       width: 200px;
+ height: 200px;
+    }
+     .t-bq-quote-jasper-userpic_m3{
+       width: 200px;
+ height: 200px;
+    }
+ 
+}
+@media screen and (max-width: 414px) {
+
+    .t-bq-quote-jasper-userpic_f2{
+       width: 150px;
+ height: 150px;
+}
+     .t-bq-quote-jasper-userpic_f3{
+       width: 150px;
+ height: 150px;
+    }
+     .t-bq-quote-jasper-userpic_m3{
+       width: 150px;
+ height: 150px;
+    }
+ 
+}
+
+
